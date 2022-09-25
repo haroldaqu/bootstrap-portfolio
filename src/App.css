@@ -10,18 +10,6 @@ section {
     align-items: center;
 }
 
-
-#banner {
-}
-
-#skills {
-
-}
-
-#projects {
-    height: auto !important;
-}
-
 footer {
     display: flex;
     flex-direction: column;
