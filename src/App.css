@@ -19,5 +19,5 @@ section {
 }
 
 #projects {
-    height: auto;
+    height: auto !important;
 }
