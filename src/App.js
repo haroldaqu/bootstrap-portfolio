@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/js/bootstrap.bundle';
 import './App.css';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
@@ -8,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container-xxl">
       <Navbar />
       <Banner />
       <Skills />
