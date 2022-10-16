@@ -2,14 +2,22 @@
 
 const projectData = [
     {
-        img: require('./bucketlist-ss.png'),
-        title: 'Food Bucketlist',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing.'
+        // img: require('./lakers-fan-page.png'),
+        img: require('./projectlaptop2.png'),
+        title: '2021-2022 Lakers',
+        description: 'A Lakers fan page of the 2021-2022 Lakers team roster and schedule. Features mobile responsiveness, calendar for schedule, modal window for player details and game boxscore',
+        stack: ['HTML', 'CSS', 'JavaScript', 'React'],
+        git: 'https://github.com/haroldaqu/lakers-fan-page',
+        bg: '#FDB927'
     },
     {
-        img: require('./bucketlist-ss.png'),
-        title: 'Lakers Fan Page',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing.'
+        // img: require('./travel-app.png'),
+        img: require('./projectlaptop1.png'),
+        title: 'Travel',
+        description: 'A Web app that uses APIs to find hotels, restaurants, and attractions in desired area. Features mobile Responsiveness, filtering & sorting, map view toggle, and search bar',
+        stack: ['CSS', 'JavaScript', 'React', 'Bootstrap', 'Google Maps API'],
+        git: 'https://github.com/haroldaqu/travel-app',
+        bg: '#0275d8'
     },
 ]
 

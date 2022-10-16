@@ -1,3 +1,4 @@
+import { FiChevronDown  } from "react-icons/fi";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.bundle';
 import './App.css';
@@ -9,12 +10,12 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App container-xxl">
-      <Navbar />
-      <Banner />
-      <Skills />
-      <Projects />
-      <Footer />
+    <div className="App">
+        <Navbar />
+        <Banner />
+        <Skills />
+        <Projects />
+        <Footer />
     </div>
   );
 }

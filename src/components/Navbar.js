@@ -2,10 +2,10 @@ import { CgMenuRight } from "react-icons/cg";
 
 const Navbar = () => {
     return ( 
-        <nav className="navbar fixed-top">
-            <div className="container-xxl">
-                <a href="#" className="navbar-brand" id="logo-me" >H.</a>
-                <button className="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Toggle Navigation" id="logo-btn">
+        <nav className="navbar">
+            <div className="container" id="nav-cont">
+                <a href="#" className="navbar-brand fs-1 " id="logo-me" >H.</a>
+                <button className="navbar-toggler border-0 fs-1 text-dark" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Toggle Navigation" id="logo-btn">
                     <CgMenuRight />
                 </button>
                 <div className="collapse navbar-collapse" id="nav">
