@@ -2,10 +2,14 @@ import { useState } from "react";
 
 const ProjectsCard = ({project}) => {
 
-    const [hover, setHover] = useState(true)
+    const [hover, setHover] = useState(false)
+
+    const openInNewTab = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
 
     return ( 
-        <div className="card border-0"  id="project-card" onMouseOver={() => setHover(true)}  onMouseOut={() => setHover(false)} >
+        <div className="card border-0"  id="project-card" onMouseOver={() => setHover(true)}  onMouseOut={() => setHover(false)} onClick={() => openInNewTab(project.live)}>
             <div className="position-relative p-5 rounded-1" style={{backgroundColor : project.bg}}>
                 <img src={project.img} alt="" className="card-img rounded-1" />
                 <div className={`card-body  position-absolute w-100 h-100 ${hover ? 'd-flex' : 'd-none' } flex-column justify-content-evenly align-items-center`} id="card-body">
@@ -14,7 +18,7 @@ const ProjectsCard = ({project}) => {
                     </div>
                     <p className="card-text text-secondary w-100 text-white">{project.description}</p>
                     <div className="d-flex justify-content-evenly w-100" >
-                        <a className=" text-dark border-0 fs-5 rounded-1 text-decoration-none text-center" id="project-btn"  href={project.git} target="_blank" style={{backgroundColor: project.bg}} >Live</a>
+                        <a className=" text-dark border-0 fs-5 rounded-1 text-decoration-none text-center" id="project-btn"  href={project.live} target="_blank" style={{backgroundColor: project.bg}} >Live</a>
                         <a className=" text-dark border-0 fs-5 rounded-1 text-decoration-none text-center" id="project-btn" href={project.git} target="_blank" style={{backgroundColor : project.bg}}>Code</a>
                     </div>
                 </div>
