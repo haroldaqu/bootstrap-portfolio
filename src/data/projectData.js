@@ -24,13 +24,23 @@ const projectData = [
     {
         img: require('./projectlaptop3.png'),
         title: 'Portfolio',
-        description: 'Portfolio page built and designed by myself. Features mobile responsiveness and hamburger menu  ',
+        description: 'Portfolio page built and designed by myself. Features mobile responsiveness and hamburger menu.',
         stack: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap'],
         live: false,
         href: '#banner',
         git: 'https://github.com/haroldaqu/bootstrap-portfolio',
         bg: '#38CEAC'
     },
+    {
+        img: require('./projectlaptop4.png'),
+        title: '2020 NBA Players',
+        description: 'A web app that finds nba players from the 2020 season based on their name or team. Features mobile responsiveness, modal window for player details, and search bar.',
+        stack: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
+        live: 'https://searchyourplayer.netlify.app/',
+        href: '#banner',
+        git: 'https://github.com/haroldaqu/search-nba-players',
+        bg: '#6c757d'
+    }, 
 ]
 
 export default projectData
