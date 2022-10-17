@@ -15,7 +15,7 @@ const projectData = [
         // img: require('./travel-app.png'),
         img: require('./projectlaptop1.png'),
         title: 'Travel',
-        description: 'A Web app that uses APIs to find hotels, restaurants, and attractions in desired area. Features mobile Responsiveness, filtering & sorting, map view toggle, and search bar.',
+        description: 'A Web app that uses APIs to find hotels, restaurants, and attractions in desired area. Features mobile responsiveness, filtering & sorting, map view toggle, and search bar.',
         stack: ['CSS', 'JavaScript', 'React', 'Bootstrap', 'Google Maps API'],
         live: 'https://travel-locations.netlify.app/',
         git: 'https://github.com/haroldaqu/travel-app',
@@ -24,10 +24,11 @@ const projectData = [
     {
         img: require('./projectlaptop3.png'),
         title: 'Portfolio',
-        description: 'A Web app that uses APIs to find hotels, restaurants, and attractions in desired area. Features mobile Responsiveness, filtering & sorting, map view toggle, and search bar.',
+        description: 'Portfolio page built and designed by myself. Features mobile responsiveness and hamburger menu  ',
         stack: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap'],
-        live: 'https://travel-locations.netlify.app/',
-        git: 'https://github.com/haroldaqu/travel-app',
+        live: false,
+        href: '#banner',
+        git: 'https://github.com/haroldaqu/bootstrap-portfolio',
         bg: '#38CEAC'
     },
 ]

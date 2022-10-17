@@ -8,7 +8,8 @@ const Skills = () => {
     return ( 
             <section className="" id="skills" >
                 <div className="container pt-4">
-                    <h1 className="text-center text-light py-4" >Tech Stack</h1>
+                    <h1 className="text-center text-light" >Tech Stack</h1>
+                    <p className="text-center text-light mb-4">Current technologies and more in progress</p>
                     <div className="border rounded-3 bg-white py-3 d-flex justify-content-evenly" id="shadow">
                         <div className="col-4 border-end" >
                             <h3 className="text-dark text-center" >Foundation</h3>

@@ -9,7 +9,7 @@ const ProjectsCard = ({project}) => {
     };
 
     return ( 
-        <div className="card border-0"  id="project-card" onMouseOver={() => setHover(true)}  onMouseOut={() => setHover(false)} onClick={() => openInNewTab(project.live)}>
+        <div className="card border-0"  id="project-card" onMouseOver={() => setHover(true)}  onMouseOut={() => setHover(false)} onClick={() => project.live ? openInNewTab(project.live) :  openInNewTab(project.git) }>
             <div className="position-relative p-5 rounded-3" style={{backgroundColor : project.bg}}>
                 <img src={project.img} alt="" className="card-img rounded-1" />
                 <div className={`rounded-3 card-body  position-absolute w-100 h-100 ${hover ? 'd-flex' : 'd-none' } flex-column justify-content-evenly align-items-center`} id="card-body">
@@ -18,7 +18,7 @@ const ProjectsCard = ({project}) => {
                     </div>
                     <p className="card-text text-secondary w-100 text-white text-center">{project.description}</p>
                     <div className="d-flex justify-content-evenly w-100" >
-                        <a className=" text-dark border-0 fs-5 rounded-1 text-decoration-none text-center" id="project-btn"  href={project.live} target="_blank" style={{backgroundColor: '#38CEAC'}} >Live</a>
+                        {project.live &&                        <a className=" text-dark border-0 fs-5 rounded-1 text-decoration-none text-center" id="project-btn"  href={project.live} target="_blank" style={{backgroundColor: '#38CEAC'}} >Live</a>}
                         <a className=" text-dark border-0 fs-5 rounded-1 text-decoration-none text-center" id="project-btn" href={project.git} target="_blank" style={{backgroundColor : '#38CEAC'}}>Code</a>
                     </div>
                 </div>
