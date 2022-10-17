@@ -6,7 +6,7 @@ import { FiChevronDown  } from "react-icons/fi";
 const Banner = () => {
     return ( 
         <section className="container">
-            <div className="row mb-4 vh-100 d-flex justify-content-center align-items-center"  id="banner">
+            <div className="row mb-4 d-flex justify-content-center align-items-center"  id="banner">
                     <div className="row">
                         <div className="col-lg-4 d-flex justify-content-center">
                             <img src={require('./myavatar5.png')} alt="" className="rounded-circle" id="img"/>
@@ -24,7 +24,7 @@ const Banner = () => {
                             </div>
                         </div>
                     </div> 
-                    <div className="text-center">
+                    <div className="text-center d-flex align-items-end" id="down-btn-cont" >
                         <a className="border-0 bg-white fs-2" id="down-btn" href="#skills"> <FiChevronDown /> </a>
                     </div>       
             </div>
