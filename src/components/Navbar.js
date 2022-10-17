@@ -1,10 +1,15 @@
 import { CgMenuRight } from "react-icons/cg";
+import { BsFillTriangleFill, BsDot } from "react-icons/bs";
 
 const Navbar = () => {
     return ( 
         <nav className="navbar">
             <div className="container" id="nav-cont">
-                <a href="#" className="navbar-brand fs-1 " id="logo-me" >H.</a>
+                <a href="#" className="navbar-brand fs-1 position-relative d-flex justify-content-center align-items-center">
+                    h.
+                    {/* <div  className="rounded-circle" style={{backgroundColor: '#38CEAC'}}  id="dot" ></div> */}
+                    <span className="position-absolute" id="triangle"><BsFillTriangleFill /></span>
+                </a>
                 <button className="navbar-toggler border-0 fs-1 text-dark" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Toggle Navigation" id="logo-btn">
                     <CgMenuRight />
                 </button>

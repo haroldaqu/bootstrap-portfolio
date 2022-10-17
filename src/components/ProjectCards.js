@@ -10,20 +10,20 @@ const ProjectsCard = ({project}) => {
 
     return ( 
         <div className="card border-0"  id="project-card" onMouseOver={() => setHover(true)}  onMouseOut={() => setHover(false)} onClick={() => openInNewTab(project.live)}>
-            <div className="position-relative p-5 rounded-1" style={{backgroundColor : project.bg}}>
+            <div className="position-relative p-5 rounded-3" style={{backgroundColor : project.bg}}>
                 <img src={project.img} alt="" className="card-img rounded-1" />
-                <div className={`card-body  position-absolute w-100 h-100 ${hover ? 'd-flex' : 'd-none' } flex-column justify-content-evenly align-items-center`} id="card-body">
+                <div className={`rounded-3 card-body  position-absolute w-100 h-100 ${hover ? 'd-flex' : 'd-none' } flex-column justify-content-evenly align-items-center`} id="card-body">
                     <div className="d-flex justify-content-evenly w-100" >
-                    {project.stack.map((stack, i) =>  <p key={i} className="border rounded-pill text-center bg-light text-secondary" id="stack">{stack}</p> )}
+                    {project.stack.map((stack, i) =>  <p key={i} className="border rounded-pill text-center bg-light text-secondary px-1" id="stack">{stack}</p> )}
                     </div>
-                    <p className="card-text text-secondary w-100 text-white">{project.description}</p>
+                    <p className="card-text text-secondary w-100 text-white text-center">{project.description}</p>
                     <div className="d-flex justify-content-evenly w-100" >
-                        <a className=" text-dark border-0 fs-5 rounded-1 text-decoration-none text-center" id="project-btn"  href={project.live} target="_blank" style={{backgroundColor: project.bg}} >Live</a>
-                        <a className=" text-dark border-0 fs-5 rounded-1 text-decoration-none text-center" id="project-btn" href={project.git} target="_blank" style={{backgroundColor : project.bg}}>Code</a>
+                        <a className=" text-dark border-0 fs-5 rounded-1 text-decoration-none text-center" id="project-btn"  href={project.live} target="_blank" style={{backgroundColor: '#38CEAC'}} >Live</a>
+                        <a className=" text-dark border-0 fs-5 rounded-1 text-decoration-none text-center" id="project-btn" href={project.git} target="_blank" style={{backgroundColor : '#38CEAC'}}>Code</a>
                     </div>
                 </div>
             </div>
-            <h3 className={`card-title text-center ${hover ? 'text-dark' : 'text-secondary'}`}>{project.title}</h3>
+            <h3 className={`card-title text-center py-3 ${hover ? 'text-dark' : 'text-secondary'}`}>{project.title}</h3>
         </div>
      );
 }

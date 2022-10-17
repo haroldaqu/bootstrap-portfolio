@@ -3,13 +3,13 @@ import skillsData from "../data/skillsData";
 import { FiChevronDown  } from "react-icons/fi";
 
 
-const Banner = () => {
+const Banner = () => { 
     return ( 
         <section className="container">
             <div className="row mb-4 d-flex justify-content-center align-items-center"  id="banner">
                     <div className="row">
                         <div className="col-lg-4 d-flex justify-content-center">
-                            <img src={require('./myavatar5.png')} alt="" className="rounded-circle" id="img"/>
+                            <img src={require('./myavatar5.png')} alt="" className="rounded-circle img-fluid" id="img"/>
                         </div>
                         <div className="col-lg-8">
                             <div id="banner1"  className="d-flex flex-column align-items-center">

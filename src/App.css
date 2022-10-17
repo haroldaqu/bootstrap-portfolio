@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+:root {
+    --primary-color: #38CEAC;
+}
+
+* p,span,h1,h2,h3,h4 {
+    letter-spacing: 0.5px !important;
+}
+
 .App {
     font-family: 'Teko', sans-serif !important;
     /* font-family: Arial, Helvetica, sans-serif; */
@@ -12,6 +20,20 @@
     font-size: 7rem;
 }
 
+/* NAVBAR */
+#triangle {
+    /* color: var(--primary-color); */
+    color: lightgray;
+    bottom: 0;
+    z-index: -99 !important;
+    transform: rotate(45deg) ;
+}
+
+#dot {
+    width: 7.5px !important;
+    height: 7.5px !important;
+}
+
 /* BANNER */
 #banner {
     height: 90vh !important;
@@ -20,7 +42,7 @@
 #img {
     /* width: 100%; */
     width: 75%;
-    background-color: #FF6700;
+    background-color: var(--primary-color);
 }
 
 #down-btn-cont {
@@ -28,14 +50,14 @@
 }
 
 #down-btn {
-    color: #FF6700 !important;
+    color: var(--primary-color) !important;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     margin: 0 auto 0 auto;
     transform-origin: bottom;
     width: 200px;
-            animation-name: bounce-7;
-                animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-name: bounce-7;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
 }
 @keyframes bounce-7 {
     0% {
@@ -69,23 +91,21 @@
 
 
 #developer {
-    color: #FF6700;
+    color: var(--primary-color);
 }
 
 /* skills */
 #skills {
-
     position: relative;
-    height: 90vh;
-    /* padding: 3rem; */
+    height: 80vh !important;
 }
 
 #skills::before {
     content: '';
     position: absolute;
-    height: 40%;
+    height: 45%;
     width: 100%;
-    background: #FF6700;
+    background: var(--primary-color);
     top: 0;
     z-index: -99;
 }
@@ -113,7 +133,7 @@
     right: 0;
     z-index: 99;
     background-color: black;
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 #project-btn {
@@ -127,7 +147,11 @@
 /* FOOTER */
 footer {
     height: 55vh;
-    /* background-color: #FF6700; */
+    /* background-color: var(--primary-color); */
+}
+
+#contact-cont {
+    height: 40% !important;
 }
 
 #contact {
@@ -136,7 +160,7 @@ footer {
     left: 0;
     right: 0;
     max-width: 400px;
-    bottom: -50%;
+    bottom: -35%;
 }
 
 #email {
@@ -150,7 +174,8 @@ footer {
 }
 
 #info {
-    background-color: #FF6700;
+    height: 60% !important;
+    background-color: var(--primary-color);
 }
 
 
@@ -172,9 +197,6 @@ footer {
         width: 70%;
     }
 
-    #frameworks {
-        text-align: start !important;
-    }
 }
 
 

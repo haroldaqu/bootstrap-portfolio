@@ -6,69 +6,54 @@ import { SiVisualstudiocode } from "react-icons/si"
 
 const Skills = () => {
     return ( 
-            <section className="mb-4" id="skills" >
-                <div className="container pt-5">
-                    <h1 className="text-center text-white" >TOOLKITS</h1>
-                        {/* <div className="d-flex justify-content-evenly flex-row bg-white border rounded-1" id="skills-group">
-                            {
-                                skillsData.map((skill, i) => <div className=""><SkillsCard key={i} skill={skill}/></div>)
-                            }
-                        </div>                                        */}
-                    <div className="border rounded-1 bg-white p-3 d-flex flex-column justify-content-center" id="shadow">
-                        <div className="row border-bottom" >
-                            <div className="col-sm-8">
-                                <h3 className="text-dark" >Foundation</h3>
-                                <div className="d-flex justify-content-evenly bg-white px-2 rounded-1 text-secondary">
-                                    <div className="">
-                                        <p className="fs-1"><TbBrandHtml5 /></p>
-                                        <p>HTML</p>
-                                    </div>
-                                    <div className="">
-                                        <p className="fs-1"><TbBrandCss3 /></p>
-                                        <p>CSS</p>    
-                                    </div>
-                                    <div className="">
-                                        <p className="fs-1"><TbBrandJavascript /></p>
-                                        <p>Javascript</p>    
-                                    </div>
+            <section className="" id="skills" >
+                <div className="container pt-4">
+                    <h1 className="text-center text-light py-4" >Tech Stack</h1>
+                    <div className="border rounded-3 bg-white py-3 d-flex justify-content-evenly" id="shadow">
+                        <div className="col-4 border-end" >
+                            <h3 className="text-dark text-center" >Foundation</h3>
+                            <div className="d-flex justify-content-evenly align-items-center flex-column bg-white px-2 rounded-1 text-secondary">
+                                <div className="">
+                                    <p className="fs-1 text-center"><TbBrandHtml5 /></p>
+                                    <p className="text-center" >HTML</p>
                                 </div>
-                            </div>
-                            <div className="col-4" id="transparent"></div>
-                        </div>
-                        <div className="row border-bottom pt-3">
-                            <div className="col-4"></div>
-                            <div className="col-sm-8">
-                                <h3 className="text-dark text-end" id="frameworks" >Frameworks</h3>
-                                <div className="d-flex justify-content-evenly bg-white px-2 rounded-1 text-secondary">
-                                    <div className="">
-                                        <p className="fs-1"><FaReact /></p>
-                                        <p>React</p>    
-                                    </div>
-                                    <div className="">
-                                        <p className="fs-1"><TbBrandBootstrap /></p>
-                                        <p>Bootstrap</p>    
-                                    </div>
+                                <div className="">
+                                    <p className="fs-1 text-center"><TbBrandCss3 /></p>
+                                    <p className="text-center" >CSS</p>    
+                                </div>
+                                <div className="">
+                                    <p className="fs-1 text-center" ><TbBrandJavascript /></p>
+                                    <p className="text-center">Javascript</p>    
                                 </div>
                             </div>
                         </div>
-                        <div className="row pt-3">
-                            <div className="col-sm-8">
-                                <h3 className="text-dark" >Tools</h3>
-                                <div className="d-flex justify-content-evenly bg-white px-2 rounded-1 text-secondary">
-                                    <div className="">
-                                        <p className="fs-1"><SiVisualstudiocode />  </p>
-                                        <p>VS Code</p>    
-                                    </div>
-                                    <div className="">
-                                        <p className="fs-1"><FaGithub/></p>
-                                        <p>GitHub</p>    
-                                    </div>
+                        <div className="col-4 border-end ">
+                            <h3 className="text-dark text-center" >Frameworks</h3>
+                            <div className="d-flex justify-content-evenly align-items-center flex-column bg-white px-2 rounded-1 text-secondary">
+                                <div className="">
+                                    <p className="fs-1"><FaReact /></p>
+                                    <p className="text-center">React</p>    
+                                </div>
+                                <div className="">
+                                    <p className="fs-1"><TbBrandBootstrap /></p>
+                                    <p className="text-center">Bootstrap</p>    
                                 </div>
                             </div>
-                            <div className="col-4"></div>
+                        </div>
+                        <div className="col-4">
+                            <h3 className="text-dark text-center" >Tools</h3>
+                            <div className="d-flex justify-content-evenly align-items-center flex-column bg-white px-2 rounded-1 text-secondary">
+                                <div >
+                                    <p className="fs-1 text-center"><SiVisualstudiocode />  </p>
+                                    <p className="text-center" >VS Code</p>    
+                                </div>
+                                <div className="">
+                                    <p className="fs-1 text-center"><FaGithub/></p>
+                                    <p className="text-center" >GitHub</p>    
+                                </div>
+                            </div>
                         </div>                        
                     </div>
-
                 </div>
                   
             </section>
