@@ -25,7 +25,7 @@ const Footer = () => {
                     <div className="d-flex justify-content-center align-items-end py-4 h-100"  >
                          <a className="bg-dark text-white border-0 fs-5 rounded-1 text-decoration-none p-1 mx-2" href="https://github.com/haroldaqu" target="_blank">GitHub</a>
                                 <a className="bg-dark text-white border-0 fs-5 mx-2 rounded-1 text-decoration-none p-1" href="https://linkedin.com/in/harold-aquino" target="_blank">LinkedIn</a>
-                                <a className="bg-dark text-white border-0 fs-5 mx-2 rounded-1 text-decoration-none p-1" href="https://drive.google.com/file/d/1_EBnLeH5rQrWJ2vCKgLSIRTz6JAOxUYQ/view?usp=sharing" target="_blank">Resume</a>
+                                <button className="bg-dark text-white border-0 fs-5 mx-2 rounded-1 text-decoration-none p-1" onClick={() => window.open(require('../assets/DevResume.pdf') )} target="_blank">Resume</button>
                     </div>
                     <p className="text-white-50 fs-5 text-center fw-light" >Hand crafted by Harold Aquino</p>
                     <p className="text-white-50 fs-5 text-center fw-light" >

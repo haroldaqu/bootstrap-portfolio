@@ -5,7 +5,7 @@ const ProjectsCard = ({project}) => {
     const [hover, setHover] = useState(false)
 
     const openInNewTab = (event, url) => {
-        window.open(url, '_blank', 'noopener,noreferrer')
+        window.open(url, '_blank')
     }
 
     return ( 
